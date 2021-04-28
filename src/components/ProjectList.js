@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ProjectList = ({allProjects}) => {
+const ProjectList = ({allProjects, onProjectSelect}) => {
 
     const listItems = allProjects.map((project, index) => {
         return(
-            <li key={index}>{project.projectName}</li>
+            <li onClick = {()=> {onProjectSelect(project)}} key={index}>{project.projectName}</li>
         )
     })
 

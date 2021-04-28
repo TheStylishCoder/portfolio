@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Homepage from '../components/Homepage';
 import ProjectList from '../components/ProjectList';
 import NavBar from '../components/NavBar';
+import ProjectDetail from '../components/ProjectDetail';
 
 const ProjectContainer = () => {
 
@@ -30,6 +31,11 @@ const ProjectContainer = () => {
             heroku: ""  
         }
     ])
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const handleSelectedProject = (selectedProject) => {
+        setSelectedProject(selectedProject)
+    };
 
 
 
@@ -38,7 +44,12 @@ const ProjectContainer = () => {
         <>
         <NavBar />
         <Route exact path = "/" render = {() => <Homepage /> } />
-        <Route exact path = "/portfolio" render = { () => <ProjectList allProjects={allProjects}/>} />
+        <Route exact path = "/portfolio" render = { () => 
+        <>
+        <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject}/>
+        <ProjectDetail selectedProject={selectedProject} />
+        </>
+        } />
         </>
         </Router>
     )
