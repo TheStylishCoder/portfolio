@@ -1,11 +1,16 @@
 import './App.css';
+import ProjectContainer from './container/ProjectContainer';
 
 function App() {
+
   return (
     <div className="App">
-      <p>Hello World</p>
+
+      <ProjectContainer />
+
     </div>
   );
+  
 }
 
 export default App;
