@@ -4,6 +4,7 @@ import Homepage from '../components/Homepage';
 import ProjectList from '../components/ProjectList';
 import NavBar from '../components/NavBar';
 import ProjectDetail from '../components/ProjectDetail';
+import Sidebar from '../components/Sidebar';
 
 const ProjectContainer = () => {
 
@@ -43,6 +44,7 @@ const ProjectContainer = () => {
         <Router>
         <>
         <NavBar />
+        <Sidebar/>
         <Route exact path = "/" render = {() => <Homepage /> } />
         <Route exact path = "/portfolio" render = { () => 
         <>
