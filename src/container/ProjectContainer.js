@@ -44,7 +44,7 @@ const ProjectContainer = () => {
         <Router>
         <>
         <NavBar />
-        <Sidebar/>
+        <Sidebar />
         <Route exact path = "/" render = {() => <Homepage /> } />
         <Route exact path = "/portfolio" render = { () => 
         <>

@@ -1,10 +1,11 @@
 import React from 'react';
+import '../static/css/Sidebar.css';
 
 const Sidebar = () => {
 
     return(
         <>
-        <ul>
+        <ul className="sidebar">
             <li><a href="https://github.com/TheStylishCoder"><i class="fab fa-github fa-2x"></i></a></li>
             <li><a href="https://www.linkedin.com/in/1annacunningham/"><i class="fab fa-linkedin fa-2x"></i></a></li>
             <li><a href="mailto:ac.annacunningham@gmail.com"><i class="far fa-envelope fa-2x"></i></a></li>
