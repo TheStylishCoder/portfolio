@@ -5,7 +5,8 @@ const Homepage = () => {
     return(
         <>
 
-        <h1>Hello World</h1>
+        <h1>Anna Cunningham</h1>
+        <h3>Software Developer</h3>
         </>
     )
 }

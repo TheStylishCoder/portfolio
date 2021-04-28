@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Homepage from '../components/Homepage';
 import ProjectList from '../components/ProjectList';
+import NavBar from '../components/NavBar';
 
 const ProjectContainer = () => {
 
@@ -35,6 +36,7 @@ const ProjectContainer = () => {
     return(
         <Router>
         <>
+        <NavBar />
         <Route exact path = "/" render = {() => <Homepage /> } />
         <Route exact path = "/portfolio" render = { () => <ProjectList allProjects={allProjects}/>} />
         </>
