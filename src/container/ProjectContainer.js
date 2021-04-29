@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Homepage from '../components/Homepage';
 import ProjectList from '../components/ProjectList';
-import NavBar from '../components/NavBar';
 import ProjectDetail from '../components/ProjectDetail';
 import Sidebar from '../components/Sidebar';
 import About from '../components/About';
@@ -45,8 +44,6 @@ const ProjectContainer = () => {
     return(
         <Router>
         <>
-
-        <NavBar />
 
         <Sidebar />
 

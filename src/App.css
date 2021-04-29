@@ -5,9 +5,18 @@
 
 }
 
+.main {
+  margin-top: 70px;
+  height:100%;
+}
+
 .about {
   margin-top: 300px;
   margin-bottom: 300px;
 }
 
+.contact {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
 
