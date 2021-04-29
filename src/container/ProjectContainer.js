@@ -5,10 +5,11 @@ import ProjectList from '../components/ProjectList';
 import NavBar from '../components/NavBar';
 import ProjectDetail from '../components/ProjectDetail';
 import Sidebar from '../components/Sidebar';
+import About from '../components/About';
 
 const ProjectContainer = () => {
 
-    const [allProjects, setAllProjects] = useState([
+    const [allProjects] = useState([
         {
             projectName: "The Travel List",
             brief: "",
@@ -43,15 +44,24 @@ const ProjectContainer = () => {
     return(
         <Router>
         <>
+
         <NavBar />
+
         <Sidebar />
+
         <Route exact path = "/" render = {() => <Homepage /> } />
+
+        <Route exact path = "/about" render = {() => <About />} />
+
         <Route exact path = "/portfolio" render = { () => 
         <>
         <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject}/>
         <ProjectDetail selectedProject={selectedProject} />
         </>
         } />
+
+
+
         </>
         </Router>
     )

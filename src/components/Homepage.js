@@ -6,7 +6,7 @@ const Homepage = () => {
         <>
 
         <h1>Anna Cunningham</h1>
-        <h3>Software Developer</h3>
+        <h3>Full Stack Developer</h3>
         </>
     )
 }

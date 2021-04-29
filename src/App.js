@@ -1,5 +1,4 @@
 import './App.css';
-import Sidebar from './components/Sidebar';
 import ProjectContainer from './container/ProjectContainer';
 
 function App() {
