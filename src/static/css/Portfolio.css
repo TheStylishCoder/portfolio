@@ -1,5 +1,25 @@
 .portfolio {
     padding-top: 100px;
+    width: 100%;
+    
+
+}
+
+.portfolio > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  
+    
+
+}
+
+.portfolio > ul > li {
+    flex-direction: row;
+ 
+    padding: 50px;
 
 }
 
