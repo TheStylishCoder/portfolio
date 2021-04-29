@@ -6,9 +6,9 @@ const ProjectDetail = ({selectedProject}) => {
         return(null)
     }
     return(
-        <>
+        <div id="project">
             <p>{selectedProject.projectName}</p>
-        </>
+        </div>
     )
 }
 

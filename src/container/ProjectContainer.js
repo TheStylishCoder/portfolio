@@ -12,14 +12,15 @@ const ProjectContainer = () => {
     const [allProjects] = useState([
         {
             projectName: "The Travel List",
-            brief: "",
-            about: "",
-            technologies: "",
+            brief: "brief",
+            about: "about",
+            technologies: "technologies",
             image1: "/images/TL1.png",
             image2: "",
             image3: "",
-            github: "",
-            heroku: ""
+            github: "https://github.com/TheStylishCoder/TravelBucketList_Project",
+            heroku: "https://the-travel-list.herokuapp.com"
+        
         },
         {
             projectName: "Hello Space",
@@ -37,8 +38,10 @@ const ProjectContainer = () => {
 
     const handleSelectedProject = (selectedProject) => {
         setSelectedProject(selectedProject)
+       
     };
 
+   
 
 
     return(
@@ -51,8 +54,8 @@ const ProjectContainer = () => {
         <>
         <Homepage /> 
         <About />
-        <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject}/>
-        <ProjectDetail selectedProject={selectedProject} />
+        <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject} selectedProject={selectedProject}/>
+        {/* <ProjectDetail selectedProject={selectedProject} /> */}
         <Contact />
         </>
         } />
