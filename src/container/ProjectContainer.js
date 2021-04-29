@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar';
 import ProjectDetail from '../components/ProjectDetail';
 import Sidebar from '../components/Sidebar';
 import About from '../components/About';
+import Contact from '../components/Contact';
 
 const ProjectContainer = () => {
 
@@ -49,17 +50,15 @@ const ProjectContainer = () => {
 
         <Sidebar />
 
-        <Route exact path = "/" render = {() => <Homepage /> } />
-
-        <Route exact path = "/about" render = {() => <About />} />
-
-        <Route exact path = "/portfolio" render = { () => 
+        <Route exact path = "/" render = {() => 
         <>
+        <Homepage /> 
+        <About />
         <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject}/>
         <ProjectDetail selectedProject={selectedProject} />
+        <Contact />
         </>
         } />
-
 
 
         </>
