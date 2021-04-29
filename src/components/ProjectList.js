@@ -15,7 +15,7 @@ const ProjectList = ({allProjects, onProjectSelect}) => {
 
 
     return(
-        <div className="project-list" id="portfolio">
+        <div className="portfolio" id="portfolio">
             <ul>
                 {listItems}
             </ul>

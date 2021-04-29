@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100%;
+  position: relative;
  
 
 }
@@ -11,8 +12,13 @@
 }
 
 .about {
+  padding-top: 100px;
   margin-top: 300px;
   margin-bottom: 300px;
+}
+
+.portfolio {
+  padding-top: 100px;
 }
 
 .contact {
