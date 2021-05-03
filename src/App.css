@@ -2,13 +2,17 @@
   text-align: center;
   height: 100%;
   position: relative;
- 
+
 
 }
 
 .main {
   margin-top: 70px;
   height:100%;
+}
+
+.home {
+  padding-top: 200px;
 }
 
 .about {
