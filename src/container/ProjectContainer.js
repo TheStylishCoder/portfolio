@@ -36,6 +36,19 @@ const ProjectContainer = () => {
             image4: "/images/HS4.png",
             github: "https://github.com/TheStylishCoder/SpaceAppProject",
             heroku: ""  
+        },
+        {
+            projectName: "Full Stack News",
+            brief: "Build a web application that allows a news company to upload the latest news.",
+            about1: "The web app has functionality for both users and admin staff. Once users have logged in, additional navbars conditionally render based on the user's role type. Standard users can view all articles and journalists as well as news in their area, recently viewed articles and can add articles to a reading list to save for later. Admin staff can create, edit and delete journalists and articles. ",
+            about2: "The backend relational database was built using Spring Boot Dev Tools, Spring Data JPA, Spring Web and an H2 database with a Maven build system. Multiple fetches are implemented in the React front end using JPA derived queries to filter news articles by category. This was a group Java project completed in week 15 of CodeClan's Professional Software Development course. Insomnia was used for testing. ",
+            technologies: "Java, React, Spring, Maven, Hibernate, CSS",
+            image1: "/images/FSN1.png",
+            image2: "/images/FSN2.png",
+            image3: "/images/FSN3.png",
+            image4: "/images/FSN4.png",
+            github: "https://github.com/TheStylishCoder/JavaNewsProject",
+            heroku: ""  
         }
     ])
     const [selectedProject, setSelectedProject] = useState(null);
