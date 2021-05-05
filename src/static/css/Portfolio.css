@@ -38,6 +38,7 @@
     width: 94%;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: 'Raleway', sans-serif;
 
     
     
@@ -139,4 +140,5 @@ padding-top: 10px;}
 
 .button {
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
 }
