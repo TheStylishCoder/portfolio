@@ -1,0 +1,36 @@
+.home {
+    padding-top: 200px;
+    /* background: linear-gradient(to right, crimson,pink,rgb(200, 136, 243)); */
+    background: linear-gradient(to right, crimson,rgb(204, 34, 119),pink);
+  
+    background-size: 200% 200%;
+    animation: rainbow 3s ease-in-out infinite;
+    background-clip: text;
+    /* width:80vw;
+    margin:30vh auto; */
+    display:block;
+    text-align:center;
+    transition: color .3s ease-in-out;
+    text-transform:uppercase;
+    font-weight:900;
+  }
+  .home:hover{
+    color:rgba(0,0,0,0);
+  }
+  @keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
+    
+  
+  
+  .home > h1 {
+    font-size: 70px;
+  }
+  
+  .home > h2 {
+    font-size: 35px;
+  }
+  
+  

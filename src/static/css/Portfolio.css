@@ -1,7 +1,6 @@
 .portfolio {
     padding-top: 100px;
     width: 100%;
-    
 }
 
 
@@ -29,7 +28,9 @@
 
 .modal {
     font-size: 12px;
-    background-color: hotpink;
+    /* background-color: hotpink; */
+    background-color: pink;
+
     /* margin: 14px; */
     height: 90%;
     left: 30px;
@@ -107,8 +108,8 @@
     display: block;
     padding: 2px 5px;
     line-height: 20px;
-    right: -10px;
-    top: -10px;
+    right: -8px;
+    top: -7px;
     font-size: 24px;
     background: #ffffff;
     border-radius: 18px;
@@ -138,7 +139,21 @@
 .project-card > h3 {
 padding-top: 10px;}
 
-.button {
+.view-button {
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif;
+    background-color: white;
+    border: 1px, solid, black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+
+.view-button:hover {
+    cursor: pointer;
 }

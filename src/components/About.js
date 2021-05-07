@@ -4,10 +4,10 @@ import '../static/css/About.css';
 const About = () => {
 
     return(
-        <div className="about" id="about">
-            <h2>About Me</h2>
+        <div className="about" id="about" >
+            <h2>ABOUT ME</h2>
             <div className="about-content">
-                <p>I am a software developer with a love of learning and a keen interest in front end development. I have recently completed <a href="https://codeclan.com" target="_blank" rel="noreferrer">CodeClan</a>’s Professional Software Development course which gave me the opportunity to explore a range of languages and technologies including Java, Python, JavaScript and React whilst practising TDD and agile methodologies. 
+                <p>I am a Glasgow based software developer with a love of learning and a keen interest in front end development. I have recently completed <a href="https://codeclan.com" target="_blank" rel="noreferrer">CodeClan</a>’s Professional Software Development course which gave me the opportunity to explore a range of languages and technologies including Java, Python, JavaScript and React whilst practising TDD and agile methodologies. 
                     <br/>
                     <br/>
                     Previously I worked in retail management which shaped me to think commercially, ensure I am always client focused and gave me a good grounding in e-commerce principles. I have an honours degree in Fashion Design and have always been interested in the arts. 

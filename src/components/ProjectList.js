@@ -27,7 +27,7 @@ const ProjectList = ({allProjects, onProjectSelect}) => {
                     <br />
                     <br/>
                     <Popup
-                        trigger={<button className="button"> View Info </button>}
+                        trigger={<button className="view-button"> View Info </button>}
                         modal
                         nested
                     >
@@ -90,7 +90,7 @@ const ProjectList = ({allProjects, onProjectSelect}) => {
 
     return(
         <div className="portfolio" id="portfolio">
-            <h2>Latest Work</h2>
+            <h2>LATEST WORK</h2>
             <ul>
                 {listItems}
             </ul>

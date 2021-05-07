@@ -1,17 +1,22 @@
 import React from 'react';
-import '../static/css/Homepage.css';
+import '../static/css/Home.css'; 
 
 const Homepage = () => {
 
  
 
     return(
-        <div className="home">
+        <div className="home" style={{
+            // backgroundImage: `url(${background})`,
+            // backgroundSize: "cover",
+            // height: "100vh",
+            // // color: "#f5f5f5"
+        }}>
 
             <h1>Anna Cunningham</h1>
-            <h3>Full Stack Developer</h3>
+            <h2>Full Stack Developer</h2>
            
-            
+    
         </div>
     )
 }
