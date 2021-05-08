@@ -2,9 +2,26 @@ import React from 'react';
 import '../static/css/NavBar.css';
 
 
-const NavBar = () => {
+const NavBar = ({lightMode, setLightMode}) => {
+
+    
+
+    if (lightMode) {
+        document.body.classList.remove("DarkMode");
+        document.body.classList.add("WhiteMode");
+    } else {
+        document.body.classList.remove("WhiteMode");
+        document.body.classList.add("DarkMode");
+    }
+
+ 
+  
+
+    
+
 
     return(
+      
         <div className="navbar">
             <ul>
                 <li>
@@ -17,10 +34,17 @@ const NavBar = () => {
                     <a href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="#contact">CONTACT</a>
+                    <div>
+                        <label className="switch">
+                        <input type="checkbox" onChange={event => setLightMode(!lightMode)} />
+                        <span className="slider round"></span>
+                        </label>
+                    </div>
                 </li>
             </ul>
         </div>
+       
+       
     )
 }
 

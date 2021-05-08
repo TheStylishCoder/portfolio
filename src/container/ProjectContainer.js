@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Homepage from '../components/Homepage';
 import ProjectList from '../components/ProjectList';
-import ProjectDetail from '../components/ProjectDetail';
-import Sidebar from '../components/Sidebar';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import MobileNavBar from '../components/MobileNavBar';
 
 const ProjectContainer = () => {
 
@@ -53,31 +54,36 @@ const ProjectContainer = () => {
     ])
     const [selectedProject, setSelectedProject] = useState(null);
 
+    const [lightMode, setLightMode] = useState(true);
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const handleSelectedProject = (selectedProject) => {
         setSelectedProject(selectedProject)
        
     };
 
+    
    
 
 
     return(
         <Router>
         <>
-
-        <Sidebar />
+        <NavBar lightMode={lightMode} setLightMode={setLightMode} menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        
+        <MobileNavBar lightMode={lightMode} setLightMode={setLightMode} menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 
         <Route exact path = "/" render = {() => 
         <>
         <Homepage /> 
         <About />
         <ProjectList allProjects={allProjects} onProjectSelect={handleSelectedProject} selectedProject={selectedProject}/>
-        {/* <ProjectDetail selectedProject={selectedProject} /> */}
         <Contact />
         </>
         } />
 
-
+        <Footer />
         </>
         </Router>
     )

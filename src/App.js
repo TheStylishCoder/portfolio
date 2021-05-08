@@ -1,13 +1,16 @@
 import './App.css';
 import ProjectContainer from './container/ProjectContainer';
-import NavBar from './components/NavBar';
+import Sidebar from './components/Sidebar';
+import './static/css/Tablet.css';
+import './static/css/Mobile.css';
 
 function App() {
 
+
   return (
     <div className="App">
-      <NavBar />
       <div className="main">
+        <Sidebar />
          <ProjectContainer />
       </div>
   

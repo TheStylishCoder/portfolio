@@ -1,13 +1,9 @@
 .home {
     padding-top: 200px;
-    /* background: linear-gradient(to right, crimson,pink,rgb(200, 136, 243)); */
     background: linear-gradient(to right, crimson,rgb(204, 34, 119),pink);
-  
     background-size: 200% 200%;
     animation: rainbow 3s ease-in-out infinite;
     background-clip: text;
-    /* width:80vw;
-    margin:30vh auto; */
     display:block;
     text-align:center;
     transition: color .3s ease-in-out;

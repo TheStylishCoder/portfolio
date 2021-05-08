@@ -4,41 +4,26 @@
   position: relative;
   font-family: 'Raleway', sans-serif;
 
-
 }
+
+
+
 
 .main {
   margin-top: 70px;
   height:100%;
-  /* padding-right: 20px; */
 }
 
 
-.contact {
-  margin-top: 300px;
-  margin-bottom: 300px;
-  padding-top: 100px;
-
-  
-}
 
 
-.contact-links {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: center;
+
+
+.footer {
+  padding-top: 300px;
+  font-size: 20px;
  
 }
 
-.contact-links a {
-  padding: 16px 8px 6px ;
-  display: block;
-  
-}
-
-.contact-links a:hover {
-  color: #f1f1f1;
-}
 
 

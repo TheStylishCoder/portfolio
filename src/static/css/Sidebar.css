@@ -1,17 +1,20 @@
-/* The sidebar menu */
 .sidebar{
     width: 60px; /* Set the width of the sidebar */
-    height: 81%;
+    height: 100%;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     /* top: 0; Stay at the top */
-    right: 0;
+    /* right: 0; */
+    top: 47%;
+    left: 95%;
+    transform: translate(-50%, -50%);
     overflow-x: hidden; /* Disable horizontal scroll */
-    /* padding-top: 20%; */
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
   }
   
   /* The navigation menu links */
@@ -26,10 +29,6 @@
   }
   
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  /* @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  } */
+
   
   

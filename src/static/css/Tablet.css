@@ -1,0 +1,41 @@
+@media (min-width: 720px) {
+    .home > h1 {
+        font-size: 60px;
+    }
+      
+    .home > h2 {
+        font-size: 25px;
+    }
+
+    .sidebar {
+        padding-right:20px;
+    }
+
+    .about {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    
+
+    .about-content > img {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mobile-navbar {
+        display:none;
+      }
+
+    .contact {
+        display: none;
+    }
+    
+}
+@media (max-width: 720px) {
+    .about-content {
+        flex-direction:column-reverse;
+        
+    }
+}
