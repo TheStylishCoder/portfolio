@@ -11,7 +11,7 @@
     font-weight:900;
   }
   .home:hover{
-    color:rgba(0,0,0,0);
+    color:rgba(0,0,0,0); 
   }
   @keyframes rainbow { 
     0%{background-position:left}
@@ -29,4 +29,11 @@
     font-size: 35px;
   }
   
-  
+  @media not all and (min-resolution:.001dpcm) { 
+    @media {
+      .home:hover{
+        color: rgb(204, 34, 119);
+        opacity: 0.5;
+      }
+    }
+}
