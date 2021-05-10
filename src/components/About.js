@@ -15,7 +15,7 @@ const About = () => {
                     <br/>
                     I have a true passion for supporting others and would like to take on a new role that allows me to combine my creative, commercial and coding skills, build inspiring web applications and solve complex problems. 
                 </p>
-                <img src="/images/me.png" alt="me" height="250px" />
+                <img src="/images/me.png" alt="Anna Cunningham" height="250px" />
             </div>
         </div>
     )
